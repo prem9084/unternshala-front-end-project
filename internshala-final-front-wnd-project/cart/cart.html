@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<style>
+    /* Basic styling for the cart page */
+body {
+    font-family: Arial, sans-serif;
+    background-image:linear-gradient(to top,rgb(110, 198, 110),gray,skyblue);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+}
+.container-fluid{
+                padding: 0 !important;
+                margin: 0;
+}
+
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+    top: 50px;
+    padding-bottom: 110px;
+}
+
+.cart-items {
+    flex: 2;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.card-header h3{
+    background-color: gray;
+    color: white;
+}
+.items{
+    background-color: gray;
+    color: white;
+    margin-bottom: -8px;
+    border-radius: 5px;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.item-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.item-details h3 {
+    margin: 0;
+}
+
+.delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-summary {
+    flex: 1;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.summary-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+hr {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+.checkout-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+    .cart-container {
+        flex-direction: column;
+    padding-bottom: 100px;
+    
+    }
+    .cart-summary {
+       
+       position: relative;
+       top: 20px;
+       
+       }
+   
+       .cart-items,
+       .cart-summary {
+           width: 100%;
+       }
+   
+       .item {
+           grid-template-columns: 1fr;
+       }
+}
+@media (min-width:768px) and (max-width: 992px) {
+    .cart-container {
+        flex-direction: column;
+    padding-bottom: 110px;
+    
+    }
+    .cart-summary {
+       margin: 20px 0px;
+     width: 98%;
+       
+       }
+       .item {
+           grid-template-columns: 1fr 1fr 1fr;
+       }
+}
+#footer{
+    position: relative;
+    bottom: 0px;
+}
+
+</style>
+<body>
+    <div class="container-">
+        <div id="header"></div>
+        <div id="main">
+    
+
+            <div class="cart-container">
+                <div class="cart-items me-3 ">
+                    <div class="items text-center"><h3>Items in cart</h3></div>
+                    <div class="item text-center">
+                        <div class="item-image">
+                            <img src="https://images.meesho.com/images/products/187913412/ug397_512.webp" width="150px" alt="Product Image">
+                        </div>
+                        <div class="item-details">
+                            <h3>Kids frawok</h3>
+                            <p>Price: $10</p>
+                            <button class="delete-button btn btn-danger"><i class="fa fa-trash"></i></button>
+                        </div>
+                        <div class="quantity mx-auto">
+                            <button class="quantity-button btn btn-warning">-</button>
+                            <input type="number" class="text-center" value="1">
+                            <button class="quantity-button btn btn-warning">+</button>
+                        </div>
+                    </div>
+                    <!-- Repeat similar item structure for other products -->
+                </div>
+                <div class="cart-summary ">
+                    <div class="summary-card">
+                        <div class="card-header text-center"><h3 style="border-radius: 5px;">Summary</h3></div>
+                        <div class="card-item">
+                            <span>Product Price (Total)</span>
+                            <span>$30</span>
+                        </div>
+                        <div class="card-item">
+                            <span>Shipping</span>
+                            <span>$5</span>
+                        </div>
+                        <hr>
+                        <div class="card-item">
+                            <span>Total Cost</span>
+                            <span>$35</span>
+                        </div>
+                        <button class="checkout btn btn-warning mx-auto w-100 mt-2">Checkout</button>
+                    </div>
+                </div>
+            </div>
+
+        <div id="footer"></div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            $(function () {
+                $('#header').load('../header/Header.html');
+                $('#footer').load('../footer/footer.html');
+
+            })
+        </script>
+    </div>
+
+
+
+</body>
+
+</html>

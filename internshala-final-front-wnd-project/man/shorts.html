@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shorts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<style>
+    body{
+        overflow-x: hidden;
+    }
+    .container-fluid {
+        padding: 0 !important;
+        margin: 0;
+    }
+    h2{
+        font-family: cursive;
+    }
+
+    .card {
+        text-align: center;
+        width: 19rem;
+        margin: auto;
+
+    }
+
+
+    .card:hover {
+        box-shadow: 0px 2px 4px 0px #1b1919;
+        transform: translateY(-3px);
+        width: 19.5rem;
+
+    }
+
+
+    @media (min-width:280px) and (max-width:767px) {
+
+
+
+        .mobile-responsiv {
+            display: none;
+            /* Hide items with col-lg-3 class on mobile */
+        }
+
+
+
+        .card {
+            width: 20rem;
+            align-items: center;
+            margin: auto;
+        }
+    }
+
+    @media (min-width:768px) and (max-width:913px) {
+
+        /* isme likhan ok */
+        .tablet-responsiv {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+    <div class="container-">
+        <div id="header"></div>
+        <div id="main">
+         
+            <div><hr>
+                <h2 class="text-center">Shorts</h2>
+                <hr>
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner"  style="margin-bottom: 15px;">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-12 mobile-responsiv tablet-responsiv">
+
+                                    <div class="card"  >
+                                        <img src="https://berge.co.in/wp-content/uploads/2022/05/SD101-Black-3-v2.jpg"
+                                            height="250" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Balck Short<br><br>₹189</h5>
+                                            <p class="card-text">This product only for ma You can buy all color</p>
+                                            <div class="btn btn-warning">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                Add to Cart
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 tablet-responsiv">
+
+                                    <div class="card"  >
+                                        <img src="data:image/jpeg;base64,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"
+                                            height="250" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Gray Short<br><br>₹169</h5>
+                                            <p class="card-text">Gray short is uniq color and this color is very beautifull</p>
+                                            <div class="btn btn-warning">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                Add to Cart
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 mobile-responsiv">
+
+                                    <div class="card"  >
+                                        <img src="https://sslimages.shoppersstop.com/sys-master/images/hb0/h2b/16408550080542/S21183SWSH330SB_SKY_BLUE_alt1.jpg_2000Wx3000H"
+                                            height="250" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">SkyBlue Short<br><br>₹209</h5>
+                                            <p class="card-text">SkyBlur Short Is only for man and it's very beautifull product</p>
+                                            <div class="btn btn-warning">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                Add to Cart
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-sm-12 mobile-responsiv">
+
+                                    <div class="card"  >
+                                        <img src="https://pyxis.nymag.com/v1/imgs/b09/294/ce9b5f6b3ea60165e0f57e982dec26df8a.rsquare.w600.jpg"
+                                            height="250" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Best jim short<br><br>₹249</h5>
+                                            <p class="card-text">This short Comfortabl for jim and you can buy all color</p>
+                                            <div class="btn btn-warning">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                Add to Cart
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-12 mobile-responsiv tablet-responsiv ">
+
+                                    <div class="card"  >
+                                        <img src="https://riverrockoutfitter.com/cdn/shop/products/3002501289d1_1_1024x1024.webp?v=1679492079"
+                                            height="250" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">DarkBlue Short<br><br>₹209</h5>
+                                            <p class="card-text">Dark Blue Shor fom man and It's good product</p>
+                                            <div class="btn btn-warning">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                Add to Cart
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 tablet-responsiv">
+
+                                    <div class="card"  >
+                                        <img src="https://riverrockoutfitter.com/cdn/shop/products/3002500930d1.webp?v=1679492079"
+                                            height="250" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Silver color Short<br><br>₹219</h5>
+                                            <p class="card-text">You can buy more color in shorts and this is comfortable</p>
+                                            <div class="btn btn-warning">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                Add to Cart
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 mobile-responsiv">
+
+                                    <div class="card"  >
+                                        <img src="https://images.bestsellerclothing.in/data/JJ/27-july-2023/263085901_g0.jpg?width=415&height=550&mode=fill&fill=blur&format=auto"
+                                            height="250" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Printed Short<br><br>₹199</h5>
+                                            <p class="card-text">You Can buy diffirent printed short and more availabe diff. color</p>
+                                            <div class="btn btn-warning">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                Add to Cart
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 mobile-responsiv">
+                                    <div class="card"  >
+                                        <img src="https://www.beyours.in/cdn/shop/products/soft-beige-air-shorts-1.jpg?v=1649316596"
+                                            height="250" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">LightGold Short<br><br>₹179</h5>
+                                            <p class="card-text">Thiss product only for man and we have more color you can buy diff. color</p>
+                                            <div class="btn btn-warning">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                Add to Cart
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="carousel-item" style="margin-bottom: 15px;">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-12 mobile-responsiv tablet-responsiv">
+
+                                    <div class="card"  >
+                                        <img src="https://bodybrics.com/cdn/shop/products/bl2_2048x2048.jpg?v=1664108485"
+                                            height="250" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">LightBlue Short<br><br>₹201</h5>
+                                            <p class="card-text">This is best short for jim and you can buy more color</p>
+                                            <div class="btn btn-warning">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                Add to Cart
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 tablet-responsiv">
+
+                                    <div class="card"  >
+                                        <img src="https://5.imimg.com/data5/WC/FP/MY-37820579/men-cargo-shorts-500x500.jpg"
+                                            height="250" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Short<br><br>₹179</h5>
+                                            <p class="card-text">This is only for man and you can buy diff. color</p>
+                                            <div class="btn btn-warning">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                Add to Cart
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 mobile-responsiv">
+
+                                    <div class="card"  >
+                                        <img src="https://5.imimg.com/data5/SELLER/Default/2023/4/304162253/JZ/DZ/DT/2054534/2-500x500.JPG"
+                                            height="250" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Blue color Short<br><br>₹269</h5>
+                                            <p class="card-text">this is only for man and blue color is very beautifull</p>
+                                            <div class="btn btn-warning">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                Add to Cart
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12 mobile-responsiv">
+
+                                    <div class="card"  >
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbLy67lXVPHPFUAudHnjFYPKMCwS2huYXxV2cm2pz-ffLdrWWI7AsanyvM0HMNOkG-WWQ&usqp=CAU"
+                                            height="250" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">DarkBlue Short<br><br>₹199</h5>
+                                            <p class="card-text">This is very good product and you can buy more diff. color</p>
+                                            <div class="btn btn-warning">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                Add to Cart
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev data-bs-slide">
+                        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <hr>
+            </div>
+            <div id="footer"></div>
+        </div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+        <script>
+            $(function () {
+                $('#header').load('../header/Header.html');
+                $('#footer').load('../footer/footer.html');
+
+            })
+        </script>
+    </div>
+</body>
+
+</html>

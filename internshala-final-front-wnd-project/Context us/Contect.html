@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contect Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<style>
+    body{
+        overflow-x: hidden;
+        background-image: linear-gradient(to top,blue,gray,skyblue);
+        overflow-x: hidden;
+    }
+   
+
+    .contect {
+        padding-bottom: 80px !important;
+        
+                
+
+        
+    }
+   
+
+    .contact-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+
+    .contact-image {
+        width: 100%;
+    }
+
+    .contact-form {
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+   /*for Stenderd device*/
+   @media  (min-width:767px) and (max-width:992px) {
+    .contact-container {
+     height: 100%;
+
+    }
+   .contact-image {
+        width: 100%;
+    } 
+}
+@media  (min-width:1200px) and (max-width:1600px) {
+    .contact-container {
+      height: 100%;
+    }
+    
+}
+
+
+</style>
+
+<body>
+    <div class="container-">
+        <div id="header"></div>
+        <div id="main">
+
+
+            <div class="container-fluid contect">
+                <div class="row contact-container" >
+                    <!-- Column 1: Image -->
+                    <div class="col-md-11 my-4 col-lg-6 col-sm-11">
+                        <img src="/photo/banner.png"
+                            alt="Business Image" class="contact-image">
+                    </div>
+                    <!-- Column 2: Contact Form -->
+                    <div class="col-md-11 my-4 col-lg-6 col-sm-11">
+                        <form class="contact-form">
+                            <h2 class="text-center">Contact Us</h2>
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" class="form-control" placeholder="Name" id="name" name="name"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" placeholder="Email" id="email" name="email"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message:</label>
+                                <textarea class="form-control" placeholder="Message" id="message" name="message"
+                                    rows="4"></textarea>
+                            </div>
+                            <button type="submit" class=" btn btn-warning col-lg-12"
+                                style="margin-top: 6px;">Submit</button>
+                        </form>
+                    </div>
+                
+                </div>
+            </div>
+
+
+
+            <div id="footer"></div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+            integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            $(function () {
+                $('#header').load('../header/Header.html');
+                $('#footer').load('../footer/footer.html');
+
+            })
+        </script>
+    </div>
+
+
+
+</body>
+
+</html>
+</body>
+
+</html>
